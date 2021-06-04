@@ -15,14 +15,14 @@
   }
   @foreach (var join in Model.JoinEntities)
   {
-    <li>@Html.ActionLink($"{join.Engineer.Name}","Details", new { id = join.Engineer.EngineerId} )</li>
+    <li>@Html.ActionLink($"{join.Engineer.Name}","Details", "Engineers", new { id = join.Engineer.EngineerId} )</li>
   }
 </ul>
 
 <ul class="menu-links">
   <li>@Html.ActionLink("Edit machine details","Edit", new {id = Model.MachineId })</li>
+  <li>@Html.ActionLink("Add engineer to this machine","AddEngineer", new {id = Model.MachineId })</li>
   <li>@Html.ActionLink("Delete machine","Delete", new {id = Model.MachineId })</li>
-  <li>@Html.ActionLink("Add engineer","AddEngineer", new {id = Model.MachineId })</li>
 </ul>
 
 <ul class="menu-links">
