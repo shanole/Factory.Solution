@@ -1,0 +1,28 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Factory.Models
+@model List<Factory.Models.Machine>
+
+<h2>Machines</h2>
+
+@if (@Model.Count == 0)
+{
+  <p>There are currently no machines.</p>
+}
+
+<ul>
+  @foreach (Machine machine in Model)
+  {
+    <li>@Html.ActionLink($"{machine.Type}", "Details", new { id = machine.MachineId })</li>
+  }
+</ul>
+
+<ul class="menu-links">
+  <li>@Html.ActionLink("Add a new machine","Create")</li>
+</ul>
+
+<ul class="menu-links">
+  <li>@Html.ActionLink("Home","Index","Home")</li>
+</ul>
