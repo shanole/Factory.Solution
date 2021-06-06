@@ -46,12 +46,13 @@ Installation
   }
 }
 ```
+* Create initial migration with `$ dotnet ef migrations add Initial` and create local database with `dotnet ef database update`
 * Compile code by running command `$ dotnet build`
 * Run program with command `$ dotnet run` to open webpage on your preferred browser at `http://localhost:5000`
 
 ## Schema <a id="schema"></a>
 
-![schema design]()
+![schema design](https://github.com/shanole/Factory.Solution/blob/main/schema.png?raw=true)
 
 ## Known Bugs <a id="bugs"></a>
 * None known at this time. If you find one, please don't hesitate to contact me about it!
