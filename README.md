@@ -46,7 +46,7 @@ Installation
   }
 }
 ```
-* Create initial migration with `$ dotnet ef migrations add Initial` and create local database with `dotnet ef database update`
+* Create local database from migration with `dotnet ef database update`
 * Compile code by running command `$ dotnet build`
 * Run program with command `$ dotnet run` to open webpage on your preferred browser at `http://localhost:5000`
 
